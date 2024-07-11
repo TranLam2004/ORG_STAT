@@ -323,9 +323,12 @@ const saveDataToFile = (data) => {
 
 // Khởi tạo data
 let data = {};
-// Lấy thông tin tổ chức và lưu vào file
-getORGInfo(orgname)
-  .then((info) => {
+
+// Hàm chính bao bọc tất cả các thao tác
+async function main() {
+  try {
+    // Lấy thông tin tổ chức và lưu vào file
+    const info = await getORGInfo(orgname);
     data.info = {
       login: info.login,
       avatar_url: info.avatar_url,
@@ -348,16 +351,12 @@ getORGInfo(orgname)
     saveDataToFile(data);
 
     // Lấy danh sách thành viên và lưu vào file
-    return getORGmembers(orgname);
-  })
-  .then((members) => {
+    const members = await getORGmembers(orgname);
     data.members = members.map((member) => member.login); // Chỉ lấy thuộc tính login
     saveDataToFile(data);
 
     // Lấy thông tin các repo và xử lý dữ liệu
-    return getORGRepos(orgname);
-  })
-  .then(async (repos) => {
+    const repos = await getORGRepos(orgname);
     data.repos = {};
 
     if (repos) {
@@ -421,9 +420,12 @@ getORGInfo(orgname)
       await UpdateData(data); // Cập nhật dữ liệu sau khi lấy tất cả thông tin repo
       saveDataToFile(data); // Lưu dữ liệu sau khi cập nhật
     }
-  })
-  .catch((error) => {
+  } catch (error) {
     console.error(`Lỗi khi xử lý các repo: ${error.message}`);
-  });
+  }
 
-await generateCharts();
+  await generateCharts(); // Chờ hàm generateCharts() thực hiện cuối
+}
+
+// Gọi hàm chính
+main();
