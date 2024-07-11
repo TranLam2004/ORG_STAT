@@ -3,6 +3,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import core from "@actions/core";
 import isCI from "is-ci";
+import generateCharts from "./chart.cjs";
 
 env.config();
 //const token = process.env.TOKEN;
@@ -319,7 +320,7 @@ const UpdateData = async (data) => {
 const saveDataToFile = (data) => {
   fs.writeFileSync("data.json", JSON.stringify(data, null, 2), "utf-8");
 };
-
+/*
 // Khởi tạo data
 let data = {};
 // Lấy thông tin tổ chức và lưu vào file
@@ -424,3 +425,5 @@ getORGInfo(orgname)
   .catch((error) => {
     console.error(`Lỗi khi xử lý các repo: ${error.message}`);
   });
+  */
+await generateCharts();

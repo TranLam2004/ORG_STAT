@@ -6,25 +6,29 @@ const ChartDataLabels = require("chartjs-plugin-datalabels");
 
 Chart.register(...registerables);
 
-const dataFilePath = path.resolve(__dirname, "./data.json");
+function generateCharts() {
+  const dataFilePath = path.resolve(__dirname, "./data.json");
 
-fs.readFile(dataFilePath, "utf8", (err, jsonString) => {
-  if (err) {
-    console.log("File read failed:", err);
-    return;
-  }
-  try {
-    const data = JSON.parse(jsonString);
-    createLanguagesChart(data);
-    createTotalCommitChart(data);
-    createTotalCommitBy6MonthChart(data);
-    createContributionsBy6MonthChart(data);
-    createMenbersBy6MonthChart(data);
-    createChart(data);
-  } catch (err) {
-    console.log("Error parsing JSON string:", err);
-  }
-});
+  fs.readFile(dataFilePath, "utf8", (err, jsonString) => {
+    if (err) {
+      console.log("File read failed:", err);
+      return;
+    }
+    try {
+      const data = JSON.parse(jsonString);
+      createLanguagesChart(data);
+      createTotalCommitChart(data);
+      createTotalCommitBy6MonthChart(data);
+      createContributionsBy6MonthChart(data);
+      createMenbersBy6MonthChart(data);
+      createChart(data);
+    } catch (err) {
+      console.log("Error parsing JSON string:", err);
+    }
+  });
+}
+
+module.exports = generateCharts;
 
 function createLanguagesChart(data) {
   const canvas = createCanvas(600, 400, "svg");
