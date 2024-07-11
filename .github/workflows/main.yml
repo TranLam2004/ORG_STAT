@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Run
-        uses: ./index.js
+        uses: ./
         with:
           orgname: "TickLabVN"
           TOKEN: ${{ secrets.PERSONAL_TOKEN }}
