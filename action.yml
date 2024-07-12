@@ -9,4 +9,4 @@ inputs:
     required: true
 runs:
   using: "node20"
-  main: "./dist/assets/index-CKGKfb9f.js"
+  main: "dist/index.js"

@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Run
-        uses: ./dist/assets/index-CKGKfb8f.js
+        uses: ./
         with:
           orgname: "TickLabVN"
           TOKEN: ${{ secrets.PERSONAL_TOKEN }}
