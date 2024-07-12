@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "graph": "node chart.cjs",
-    "start:index": "node index.js"
+    "start:index": "node index.js",
+    "build": "vite build"
   },
   "author": "",
   "license": "ISC",
@@ -17,5 +18,8 @@
     "chartjs-plugin-datalabels": "^2.2.0",
     "node-fetch": "^2.7.0",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "vite": "^5.3.3"
   }
 }
