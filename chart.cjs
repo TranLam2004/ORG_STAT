@@ -1,19 +1,13 @@
-import { Chart, registerables } from "chart.js";
-import { createCanvas } from "canvas";
-import fs from "fs";
-import path from "path";
-import { fileURLToPath } from 'url';
-import ChartDataLabels from "chartjs-plugin-datalabels";
+const { Chart, registerables } = require("chart.js");
+const { createCanvas } = require("canvas");
+const fs = require("fs");
+const path = require("path");
+const ChartDataLabels = require("chartjs-plugin-datalabels");
 
 Chart.register(...registerables);
-  // Get the current module's directory
-  const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
-  
-  // Resolve the path to data.json
-  const dataFilePath = path.resolve(__dirname, "./data.json");
-function generateCharts() {
 
+function generateCharts() {
+  const dataFilePath = path.resolve(__dirname, "./data.json");
 
   fs.readFile(dataFilePath, "utf8", (err, jsonString) => {
     if (err) {
@@ -34,7 +28,7 @@ function generateCharts() {
   });
 }
 
-export default generateCharts;
+module.exports = generateCharts;
 
 function createLanguagesChart(data) {
   const canvas = createCanvas(600, 400, "svg");
