@@ -1,6 +1,6 @@
 import fs from "fs";
 import core from "@actions/core";
-import generateCharts from "./chart.cjs";
+import generateCharts from "./chart.js";
 
 const token = core.getInput("TOKEN");
 const orgname = core.getInput("orgname");

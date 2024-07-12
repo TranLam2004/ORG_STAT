@@ -6,8 +6,7 @@
   "main": "index.js",
   "scripts": {
     "graph": "node chart.cjs",
-    "start:index": "node index.js",
-    "build": "vite build"
+    "start:index": "node index.js"
   },
   "author": "",
   "license": "ISC",
