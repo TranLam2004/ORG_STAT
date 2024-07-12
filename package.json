@@ -21,6 +21,6 @@
     "dotenv": "^16.4.5"
   },
   "devDependencies": {
-    "@types/is-ci": "^3.0.4",
+    "@types/is-ci": "^3.0.4"
   }
 }
