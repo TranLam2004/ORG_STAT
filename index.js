@@ -1,13 +1,6 @@
-//import env from "dotenv";
-import fetch from "node-fetch";
 import fs from "fs";
 import core from "@actions/core";
-//import isCI from "is-ci";
 import generateCharts from "./chart.cjs";
-
-//env.config();
-//const token = process.env.TOKEN;
-//const orgname = "TickLabVN";
 
 const token = core.getInput("TOKEN");
 const orgname = core.getInput("orgname");
