@@ -4,6 +4,7 @@ import fs from "fs";
 import core from "@actions/core";
 import isCI from "is-ci";
 import generateCharts from "./chart.js";
+import { autoCommitPush } from "./commit.js";
 
 env.config();
 //const token = process.env.TOKEN;
@@ -426,6 +427,7 @@ async function main() {
   }
 
   await generateCharts(); // Chờ hàm generateCharts() thực hiện cuối
+  await autoCommitPush();
 }
 
 // Gọi hàm chính

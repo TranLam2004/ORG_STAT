@@ -7,7 +7,7 @@ const repoPath = path.resolve();
 // Tạo đối tượng git
 const git = simpleGit(repoPath);
 
-async function autoCommitPush() {
+export async function autoCommitPush() {
     try {
         // Thêm tất cả các thay đổi
         await git.add('./*');
@@ -24,5 +24,6 @@ async function autoCommitPush() {
     }
 }
 
+export default autoCommitPush();
 // Gọi hàm autoCommitPush
-autoCommitPush();
+//autoCommitPush();
