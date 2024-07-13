@@ -620,4 +620,4 @@ function createLanguagesChart(data) {
 }
 
 export default generateCharts ;
-generateCharts();
+//generateCharts();
