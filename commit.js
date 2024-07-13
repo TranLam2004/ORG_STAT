@@ -7,6 +7,10 @@ const repoPath = path.resolve();
 // Tạo đối tượng git
 const git = simpleGit(repoPath);
 
+// Thiết lập thông tin người dùng global cho Git
+git.addConfig('user.name', 'github-actions[bot]');
+git.addConfig('user.email', 'github-actions[bot]@users.noreply.github.com');
+
 export async function autoCommitPush() {
     try {
         // Thêm tất cả các thay đổi
