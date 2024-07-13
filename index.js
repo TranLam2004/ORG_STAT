@@ -1,16 +1,17 @@
-//import env from "dotenv";
+import env from "dotenv";
 import fetch from "node-fetch";
 import fs from "fs";
 import core from "@actions/core";
-//import isCI from "is-ci";
+import isCI from "is-ci";
 import generateCharts from "./chart.cjs";
 
-//env.config();
+env.config();
 //const token = process.env.TOKEN;
 //const orgname = "TickLabVN";
 
-const token = core.getInput("TOKEN");
-const orgname = core.getInput("orgname");
+const token = isCI ? core.getInput("TOKEN") : process.env.TOKEN || "";
+const orgname = isCI ? core.getInput("orgname") : "TickLabVN";
+
 
 // Hàm để lấy dữ liệu JSON từ URL và xử lý lỗi nếu có
 const fetchJSON = async (url) => {
