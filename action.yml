@@ -10,4 +10,4 @@ inputs:
 runs:
   using: "node20"
   main: "dist/index.js"
-  post: "commit.js"
+ 
