@@ -14,7 +14,7 @@ export async function autoCommitPush() {
         await git.addConfig('user.name', 'github-actions[bot]');
         await git.addConfig('user.email', 'github-actions[bot]@users.noreply.github.com');
         // Thêm tất cả các thay đổi
-        await git.add('./img*');
+        await git.add('./*');
 
         // Tạo commit với thông điệp tự động
         await git.commit(`Auto commit`);
