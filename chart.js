@@ -43,6 +43,7 @@ function createChart(data) {
 
   const svg = body.select('#container').append('svg')
     .attr('xmlns', 'http://www.w3.org/2000/svg')
+    .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', width)
     .attr('height', height);
 
@@ -127,6 +128,7 @@ function createTotalCommitChart(data) {
   // Tạo svg element để chứa biểu đồ
   const svg = body.select('#container').append('svg')
     .attr('xmlns', 'http://www.w3.org/2000/svg')
+    .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', fullWidth)
     .attr('height', fullHeight);
 
@@ -213,6 +215,7 @@ function createTotalCommitBy6MonthChart(data) {
   // Tạo svg element để chứa biểu đồ
   const svg = body.select('#container').append('svg')
     .attr('xmlns', 'http://www.w3.org/2000/svg')
+    .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', fullWidth)
     .attr('height', fullHeight);
 
@@ -292,6 +295,7 @@ function createContributionsBy6MonthChart(data) {
   // Tạo svg element để chứa biểu đồ
   const svg = body.select('#container').append('svg')
     .attr('xmlns', 'http://www.w3.org/2000/svg')
+    .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', fullWidth)
     .attr('height', fullHeight);
 
@@ -408,6 +412,7 @@ function createMembersBy6MonthChart(data) {
   // Tạo svg element để chứa biểu đồ
   const svg = body.select('#container').append('svg')
     .attr('xmlns', 'http://www.w3.org/2000/svg')
+    .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', fullWidth)
     .attr('height', fullHeight);
 
@@ -527,6 +532,7 @@ function createLanguagesChart(data) {
 
   const svg = body.select('#container').append('svg')
     .attr('xmlns', 'http://www.w3.org/2000/svg')
+    .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', 800)
     .attr('height', 600)
     .append('g')
