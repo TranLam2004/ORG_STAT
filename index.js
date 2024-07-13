@@ -426,7 +426,7 @@ async function main() {
     console.error(`Lỗi khi xử lý các repo: ${error.message}`);
   }
 
-  await generateCharts(); // Chờ hàm generateCharts() thực hiện cuối
+  generateCharts(); // Chờ hàm generateCharts() thực hiện cuối
   await autoCommitPush();
 }
 
