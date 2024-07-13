@@ -3,7 +3,7 @@ import fetch from "node-fetch";
 import fs from "fs";
 import core from "@actions/core";
 import isCI from "is-ci";
-import generateCharts from "./chart.cjs";
+import generateCharts from "./chart.js";
 
 env.config();
 //const token = process.env.TOKEN;
