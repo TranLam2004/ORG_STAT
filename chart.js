@@ -99,6 +99,12 @@ function createChart(data) {
     .style('font-size', '20px')
     .style('fill', 'black')
     .text('Total Information');
+  // Tạo thư mục 'img' nếu chưa tồn tại
+  const imgDir = path.join(__dirname, 'img');
+  if (!fs.existsSync(imgDir)) {
+    fs.mkdirSync(imgDir);
+    console.log('Created directory: img');
+  }
 
   const svgString = body.select('#container').html();
   fs.writeFileSync(path.join(__dirname, "img", "Information.svg"), svgString);
@@ -185,7 +191,12 @@ function createTotalCommitChart(data) {
     .style('font-size', '20px')
     .style('fill', 'black')
     .text('Total Commits By Members');
-
+  // Tạo thư mục 'img' nếu chưa tồn tại
+  const imgDir = path.join(__dirname, 'img');
+  if (!fs.existsSync(imgDir)) {
+    fs.mkdirSync(imgDir);
+    console.log('Created directory: img');
+  }
   // Lưu biểu đồ thành file SVG
   const svgString = body.select('#container').html();
   fs.writeFileSync(path.join(__dirname, 'img', 'TotalMembersCommit.svg'), svgString);
@@ -271,6 +282,12 @@ function createTotalCommitBy6MonthChart(data) {
     .style('fill', 'black')
     .text('Total Commits By Members (Last 6 Months)');
 
+  // Tạo thư mục 'img' nếu chưa tồn tại
+  const imgDir = path.join(__dirname, 'img');
+  if (!fs.existsSync(imgDir)) {
+    fs.mkdirSync(imgDir);
+    console.log('Created directory: img');
+  }
   const svgString = body.select('#container').html();
   fs.writeFileSync(path.join(__dirname, 'img', 'TotalMembersCommitBy6Month.svg'), svgString);
   console.log('The SVG file was created.');
@@ -385,6 +402,12 @@ function createContributionsBy6MonthChart(data) {
     .style('fill', 'black')
     .text('Total Contributions By ORG (per month for the past 6 months)');
 
+  // Tạo thư mục 'img' nếu chưa tồn tại
+  const imgDir = path.join(__dirname, 'img');
+  if (!fs.existsSync(imgDir)) {
+    fs.mkdirSync(imgDir);
+    console.log('Created directory: img');
+  }
   const svgString = body.select('#container').html();
   fs.writeFileSync(path.join(__dirname, 'img', 'TotalContributionsBy6Month.svg'), svgString);
   console.log('The SVG file was created.');
@@ -506,6 +529,12 @@ function createMembersBy6MonthChart(data) {
     .attr('alignment-baseline', 'middle');
 
 
+  // Tạo thư mục 'img' nếu chưa tồn tại
+  const imgDir = path.join(__dirname, 'img');
+  if (!fs.existsSync(imgDir)) {
+    fs.mkdirSync(imgDir);
+    console.log('Created directory: img');
+  }
   // Lưu biểu đồ thành file SVG
   const svgString = body.select('#container').html();
   fs.writeFileSync(path.join(__dirname, 'img', 'MemberCommitBy6Month.svg'), svgString);
@@ -577,6 +606,13 @@ function createLanguagesChart(data) {
     .style('fill', 'black')
     .text('Total Languages');
 
+  // Tạo thư mục 'img' nếu chưa tồn tại
+  const imgDir = path.join(__dirname, 'img');
+  if (!fs.existsSync(imgDir)) {
+    fs.mkdirSync(imgDir);
+    console.log('Created directory: img');
+  }
+
   const svgString = body.select('#container').html();
   const filePath = path.join(__dirname,"img", 'TotalLanguages.svg');
   fs.writeFileSync(filePath, svgString);
@@ -584,4 +620,4 @@ function createLanguagesChart(data) {
 }
 
 export default generateCharts ;
-//generateCharts();
+generateCharts();
