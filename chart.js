@@ -8,7 +8,7 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const dataFilePath = path.resolve(__dirname, "./data.json");
+const dataFilePath = path.resolve(__dirname, "data.json");
 
 export function generateCharts() {
   fs.readFile(dataFilePath, "utf8", (err, jsonString) => {
