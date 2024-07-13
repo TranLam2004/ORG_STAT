@@ -399,7 +399,7 @@ function createMembersBy6MonthChart(data) {
     "#32CD32", "#8B0000", "#00CED1"
   ];
 
-  const margin = { top: 100, right: 100, bottom: 100, left: 100 };
+  const margin = { top: 100, right: 100, bottom: 100, left: 80 };
   const fullWidth = 800;
   const fullHeight = 600;
   const chartWidth = fullWidth - margin.left - margin.right;
@@ -534,7 +534,7 @@ function createLanguagesChart(data) {
     .attr('xmlns', 'http://www.w3.org/2000/svg')
     .style('background-color', '#f0f0f0') // Màu nền của biểu đồ
     .attr('width', 800)
-    .attr('height', 600)
+    .attr('height', 400)
     .append('g')
     .attr('transform', 'translate(300,200)');
 
