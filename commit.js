@@ -28,6 +28,6 @@ export async function autoCommitPush() {
     }
 }
 
-export default autoCommitPush();
+export default autoCommitPush;
 // Gọi hàm autoCommitPush
 //autoCommitPush();
