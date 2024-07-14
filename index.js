@@ -7,8 +7,7 @@ import generateCharts from "./chart.js";
 import { autoCommitPush } from "./commit.js";
 
 env.config();
-//const token = process.env.TOKEN;
-//const orgname = "TickLabVN";
+
 
 const token = isCI ? core.getInput("TOKEN") : process.env.TOKEN || "";
 const orgname = isCI ? core.getInput("orgname") : "TickLabVN";
@@ -25,12 +24,12 @@ const fetchJSON = async (url) => {
       },
     });
     if (!response.ok) {
-      throw new Error(`Lỗi khi lấy dữ liệu: ${response.status}`);
+      throw new Error(`Error while retrieving data: ${response.status}`);
     }
     const text = await response.text();
     return text ? JSON.parse(text) : {};
   } catch (error) {
-    console.error("Đã có lỗi xảy ra:", error.message);
+    console.error("An error has occurred:", error.message);
   }
 };
 
@@ -381,7 +380,7 @@ async function main() {
           });
         } else {
           console.warn(
-            `Định dạng contributors không mong đợi cho repo ${repo.name}:`,
+            `Unexpected contributors format for repo ${repo.name}:`,
             contributors
           );
         }
