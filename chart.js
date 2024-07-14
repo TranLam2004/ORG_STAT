@@ -608,6 +608,10 @@ function createLanguagesChart(data) {
 
   // Tạo thư mục 'img' nếu chưa tồn tại
   const imgDir = path.join(__dirname, '../img');
+
+
+
+  
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
