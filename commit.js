@@ -17,7 +17,7 @@ export async function autoCommitPush() {
         // Tạo đối tượng git
         const git = simpleGit(repoPath);
         // Kiểm tra sự tồn tại của thư mục img và tạo nếu không tồn tại
-        const imgFolderPath = path.join(repoPath, '../img');
+        const imgFolderPath = path.join(repoPath, 'img');
         if (!fs.existsSync(imgFolderPath)) {
             fs.mkdirSync(imgFolderPath, { recursive: true });
             console.log(`Folder 'img' created at path: ${imgFolderPath}`);
