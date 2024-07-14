@@ -16,6 +16,9 @@ export async function autoCommitPush() {
         // Thêm tất cả các thay đổi
         await git.add('./*');
 
+        // Lấy trạng thái của repo để biết những thay đổi nào đã được staged
+        const statusSummary = await git.status();
+
         // Tạo commit với thông điệp tự động
         await git.commit(`Auto commit`);
 
