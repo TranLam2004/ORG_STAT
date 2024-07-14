@@ -144,7 +144,7 @@ const getContributionsByMember = async (orgname, since, until) => {
           contributionsByMember[login] += 1;
         });
       } else {
-        console.log(`Không có commits trong repository ${repo.name}`);
+        console.log(`There are no commits in the repository ${repo.name}`);
       }
     } catch (error) {
       if (error.message.includes("409")) {
@@ -154,7 +154,7 @@ const getContributionsByMember = async (orgname, since, until) => {
         );
       } else {
         console.log(
-          `Lỗi xảy ra khi lấy commits của repository ${repo.name}:`,
+          `An error occurred when retrieving commits from the repository ${repo.name}:`,
           error.message
         );
       }
