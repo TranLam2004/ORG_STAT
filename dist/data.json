@@ -1,0 +1,587 @@
+{
+  "info": {
+    "login": "TickLabVN",
+    "avatar_url": "https://avatars.githubusercontent.com/u/128288626?v=4",
+    "description": "Start here, go anywhere",
+    "blog": "https://ticklab.vn",
+    "location": "Vietnam",
+    "email": "ticklab.vn@gmail.com",
+    "public_repos": 20,
+    "public_gists": 0,
+    "followers": 11,
+    "following": 0,
+    "created_at": "2023-03-19T09:47:22Z",
+    "updated_at": "2024-02-15T15:26:53Z",
+    "type": "Organization",
+    "company": null,
+    "name": "TickLab",
+    "twitter_username": null
+  },
+  "members": [
+    "amyranotamirror",
+    "cudothanh-Nhan",
+    "hoangluong202",
+    "Huy-DNA",
+    "huynhhoangkha",
+    "Kiet0712",
+    "Minhtuei",
+    "ngyngcphu",
+    "nhthlinh",
+    "phucvinh57",
+    "quannhg",
+    "TanNguyen17112003",
+    "teddylethal",
+    "ThaiNguyenGiaBao",
+    "thaitran24",
+    "TranLam2004",
+    "VuHuy-cse-9"
+  ],
+  "repos": {
+    "TickFlow-BE": {
+      "contributions": 105,
+      "languages": {
+        "TypeScript": 14110,
+        "JavaScript": 1955,
+        "Dockerfile": 735,
+        "Shell": 126
+      },
+      "memberCommits": {
+        "hoangluong202": 15,
+        "ngyngcphu": 3,
+        "phucvinh57": 8,
+        "quannhg": 79
+      },
+      "stars": 0,
+      "pullRequests": 30,
+      "mergedPullRequests": 35
+    },
+    ".github": {
+      "contributions": 5,
+      "languages": {},
+      "memberCommits": {
+        "phucvinh57": 5
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "TickFlow-FE": {
+      "contributions": 151,
+      "languages": {
+        "TypeScript": 82708,
+        "JavaScript": 3182,
+        "CSS": 1852,
+        "Dockerfile": 578,
+        "HTML": 366,
+        "Shell": 133
+      },
+      "memberCommits": {
+        "ngyngcphu": 151
+      },
+      "stars": 2,
+      "pullRequests": 30,
+      "mergedPullRequests": 50
+    },
+    "TickLab-Challenge-FR": {
+      "contributions": 1,
+      "languages": {},
+      "memberCommits": {
+        "thaitran24": 1
+      },
+      "stars": 0,
+      "pullRequests": 2,
+      "mergedPullRequests": 0
+    },
+    "Roadmap": {
+      "contributions": 72,
+      "languages": {},
+      "memberCommits": {
+        "amyranotamirror": 18,
+        "huynhhoangkha": 7,
+        "phucvinh57": 42,
+        "thaitran24": 3,
+        "VuHuy-cse-9": 2
+      },
+      "stars": 1,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "NPO": {
+      "contributions": 9,
+      "languages": {},
+      "memberCommits": {
+        "amyranotamirror": 6,
+        "phucvinh57": 3
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "tickapp-be": {
+      "contributions": 103,
+      "languages": {
+        "TypeScript": 121191,
+        "JavaScript": 2140,
+        "PLpgSQL": 1320,
+        "Dockerfile": 735,
+        "Shell": 128
+      },
+      "memberCommits": {
+        "hoangluong202": 87,
+        "phucvinh57": 16
+      },
+      "stars": 1,
+      "pullRequests": 20,
+      "mergedPullRequests": 18
+    },
+    "tickapp-fe": {
+      "contributions": 283,
+      "languages": {
+        "TypeScript": 457249,
+        "CSS": 1967,
+        "JavaScript": 575,
+        "Dockerfile": 509,
+        "HTML": 359,
+        "Shell": 151
+      },
+      "memberCommits": {
+        "ngyngcphu": 131,
+        "phucvinh57": 26,
+        "quannhg": 126
+      },
+      "stars": 2,
+      "pullRequests": 30,
+      "mergedPullRequests": 36
+    },
+    "MonoVINI": {
+      "contributions": 2,
+      "languages": {
+        "Python": 187936,
+        "Shell": 6770
+      },
+      "memberCommits": {
+        "VuHuy-cse-9": 2
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "media": {
+      "contributions": 86,
+      "languages": {},
+      "memberCommits": {
+        "amyranotamirror": 80,
+        "ngyngcphu": 2,
+        "quannhg": 4
+      },
+      "stars": 1,
+      "pullRequests": 6,
+      "mergedPullRequests": 5
+    },
+    "devops": {
+      "contributions": 6,
+      "languages": {},
+      "memberCommits": {
+        "phucvinh57": 6
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "DarkMDE": {
+      "contributions": 2,
+      "languages": {
+        "Python": 116568
+      },
+      "memberCommits": {
+        "thaitran24": 2
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "cpp-challenge": {
+      "contributions": 1,
+      "languages": {
+        "CMake": 23426,
+        "C++": 3320,
+        "C": 1604
+      },
+      "memberCommits": {
+        "phucvinh57": 1
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "simple-csv-query-tool": {
+      "contributions": 36,
+      "languages": {},
+      "memberCommits": {
+        "ngyngcphu": 3,
+        "phucvinh57": 33
+      },
+      "stars": 4,
+      "pullRequests": 4,
+      "mergedPullRequests": 1
+    },
+    "ssps-fe": {
+      "contributions": 142,
+      "languages": {
+        "TypeScript": 215615,
+        "JavaScript": 858,
+        "CSS": 650,
+        "Dockerfile": 413,
+        "HTML": 387,
+        "Shell": 236
+      },
+      "memberCommits": {
+        "Minhtuei": 4,
+        "ngyngcphu": 121,
+        "TanNguyen17112003": 17
+      },
+      "stars": 0,
+      "pullRequests": 30,
+      "mergedPullRequests": 31
+    },
+    "ssps-be": {
+      "contributions": 127,
+      "languages": {
+        "TypeScript": 115776,
+        "JavaScript": 2134,
+        "Dockerfile": 889,
+        "Shell": 216
+      },
+      "memberCommits": {
+        "ngyngcphu": 1,
+        "quannhg": 126
+      },
+      "stars": 0,
+      "pullRequests": 30,
+      "mergedPullRequests": 48
+    },
+    "git-workflow": {
+      "contributions": 11,
+      "languages": {
+        "Shell": 342
+      },
+      "memberCommits": {
+        "quannhg": 11
+      },
+      "stars": 0,
+      "pullRequests": 9,
+      "mergedPullRequests": 7
+    },
+    "knowledge": {
+      "contributions": 28,
+      "languages": {
+        "HTML": 17207
+      },
+      "memberCommits": {
+        "amyranotamirror": 6,
+        "ngyngcphu": 16,
+        "phucvinh57": 6
+      },
+      "stars": 0,
+      "pullRequests": 13,
+      "mergedPullRequests": 13
+    },
+    "TensorRT-MDE": {
+      "contributions": 1,
+      "languages": {
+        "Python": 33432
+      },
+      "memberCommits": {
+        "VuHuy-cse-9": 1
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "Personal_Finance_App": {
+      "contributions": 69,
+      "languages": {
+        "Dart": 308488,
+        "C++": 23844,
+        "CMake": 18817,
+        "Swift": 2454,
+        "HTML": 1833,
+        "C": 1425,
+        "Kotlin": 120,
+        "Objective-C": 38
+      },
+      "memberCommits": {
+        "nhthlinh": 68,
+        "phucvinh57": 1
+      },
+      "stars": 0,
+      "pullRequests": 30,
+      "mergedPullRequests": 40
+    },
+    "tpulse": {
+      "contributions": 319,
+      "languages": {
+        "Rust": 90969,
+        "TypeScript": 45682,
+        "JavaScript": 3477,
+        "CSS": 755,
+        "HTML": 366,
+        "Shell": 126
+      },
+      "memberCommits": {
+        "Huy-DNA": 144,
+        "Minhtuei": 5,
+        "ngyngcphu": 19,
+        "phucvinh57": 45,
+        "quannhg": 51,
+        "TanNguyen17112003": 55
+      },
+      "stars": 19,
+      "pullRequests": 30,
+      "mergedPullRequests": 43
+    },
+    "tpulse-browser-extension": {
+      "contributions": 14,
+      "languages": {
+        "TypeScript": 5481,
+        "Rust": 1321,
+        "CSS": 548,
+        "HTML": 477
+      },
+      "memberCommits": {
+        "ngyngcphu": 9,
+        "phucvinh57": 2,
+        "quannhg": 3
+      },
+      "stars": 0,
+      "pullRequests": 7,
+      "mergedPullRequests": 6
+    },
+    "tonic": {
+      "contributions": 4,
+      "languages": {
+        "Go": 10584
+      },
+      "memberCommits": {
+        "phucvinh57": 4
+      },
+      "stars": 35,
+      "pullRequests": 5,
+      "mergedPullRequests": 5
+    },
+    "org-metrics": {
+      "contributions": 3,
+      "languages": {},
+      "memberCommits": {
+        "ngyngcphu": 3
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "pomodoro": {
+      "contributions": 2,
+      "languages": {},
+      "memberCommits": {
+        "ngyngcphu": 2
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    },
+    "habit-chains-management-app": {
+      "contributions": 2,
+      "languages": {},
+      "memberCommits": {
+        "quannhg": 2
+      },
+      "stars": 0,
+      "pullRequests": 0,
+      "mergedPullRequests": 0
+    }
+  },
+  "by6month": {
+    "7/2024": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 0,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 0,
+      "ngyngcphu": 0,
+      "nhthlinh": 0,
+      "phucvinh57": 14,
+      "quannhg": 0,
+      "TanNguyen17112003": 0,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 14
+    },
+    "6/2024": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 20,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 2,
+      "ngyngcphu": 0,
+      "nhthlinh": 0,
+      "phucvinh57": 6,
+      "quannhg": 2,
+      "TanNguyen17112003": 0,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 30
+    },
+    "5/2024": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 16,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 0,
+      "ngyngcphu": 3,
+      "nhthlinh": 0,
+      "phucvinh57": 0,
+      "quannhg": 4,
+      "TanNguyen17112003": 7,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 30
+    },
+    "4/2024": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 0,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 0,
+      "ngyngcphu": 5,
+      "nhthlinh": 0,
+      "phucvinh57": 1,
+      "quannhg": 8,
+      "TanNguyen17112003": 12,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 26
+    },
+    "3/2024": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 0,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 2,
+      "ngyngcphu": 7,
+      "nhthlinh": 0,
+      "phucvinh57": 4,
+      "quannhg": 5,
+      "TanNguyen17112003": 11,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 29
+    },
+    "2/2024": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 0,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 1,
+      "ngyngcphu": 4,
+      "nhthlinh": 16,
+      "phucvinh57": 4,
+      "quannhg": 0,
+      "TanNguyen17112003": 13,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 38
+    },
+    "summary": {
+      "amyranotamirror": 0,
+      "cudothanh-Nhan": 0,
+      "hoangluong202": 0,
+      "Huy-DNA": 36,
+      "huynhhoangkha": 0,
+      "Kiet0712": 0,
+      "Minhtuei": 5,
+      "ngyngcphu": 19,
+      "nhthlinh": 16,
+      "phucvinh57": 29,
+      "quannhg": 19,
+      "TanNguyen17112003": 43,
+      "teddylethal": 0,
+      "ThaiNguyenGiaBao": 0,
+      "thaitran24": 0,
+      "TranLam2004": 0,
+      "VuHuy-cse-9": 0,
+      "total": 167
+    }
+  },
+  "totalStars": 65,
+  "totalPRs": 276,
+  "totalMergedPRs": 338,
+  "totalContributions": 1584,
+  "totalLanguages": {
+    "TypeScript": 1057812,
+    "JavaScript": 14321,
+    "Dockerfile": 3859,
+    "Shell": 8228,
+    "CSS": 5772,
+    "HTML": 20995,
+    "PLpgSQL": 1320,
+    "Python": 337936,
+    "CMake": 42243,
+    "C++": 27164,
+    "C": 3029,
+    "Dart": 308488,
+    "Swift": 2454,
+    "Kotlin": 120,
+    "Objective-C": 38,
+    "Rust": 92290,
+    "Go": 10584
+  },
+  "totalMemberCommits": {
+    "amyranotamirror": 110,
+    "cudothanh-Nhan": 0,
+    "hoangluong202": 102,
+    "Huy-DNA": 144,
+    "huynhhoangkha": 7,
+    "Kiet0712": 0,
+    "Minhtuei": 9,
+    "ngyngcphu": 461,
+    "nhthlinh": 68,
+    "phucvinh57": 198,
+    "quannhg": 402,
+    "TanNguyen17112003": 72,
+    "teddylethal": 0,
+    "ThaiNguyenGiaBao": 0,
+    "thaitran24": 6,
+    "TranLam2004": 0,
+    "VuHuy-cse-9": 5
+  }
+}
