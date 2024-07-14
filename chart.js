@@ -539,6 +539,7 @@ function createMembersBy6MonthChart(data) {
   const svgString = body.select('#container').html();
   fs.writeFileSync(path.join(__dirname, '../img', 'MemberCommitBy6Month.svg'), svgString);
   console.log('The SVG file was created.');
+
 }
 
 function createLanguagesChart(data) {
@@ -608,10 +609,6 @@ function createLanguagesChart(data) {
 
   // Tạo thư mục 'img' nếu chưa tồn tại
   const imgDir = path.join(__dirname, '../img');
-
-
-
-  
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
@@ -621,6 +618,7 @@ function createLanguagesChart(data) {
   const filePath = path.join(__dirname,"../img", 'TotalLanguages.svg');
   fs.writeFileSync(filePath, svgString);
   console.log(`The SVG file was created.`);
+  console.log(`${filePath}`);
 }
 
 export default generateCharts ;
