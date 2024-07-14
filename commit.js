@@ -22,7 +22,10 @@ export async function autoCommitPush() {
         // Push thay đổi lên GitHub
         await git.push('origin', 'main');
         
+        // Lấy danh sách các file được commit từ statusSummary
+        const committedFiles = statusSummary.staged;
         console.log('Successfully committed and pushed changes.');
+        console.log('Committed files:', committedFiles);
     } catch (err) {
         console.error('Failed to commit and push changes:', err);
     }
