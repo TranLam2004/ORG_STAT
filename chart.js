@@ -4,8 +4,17 @@ import { JSDOM } from 'jsdom';
 import * as d3 from 'd3';
 //import { fileURLToPath } from 'url';
 //import { dirname } from 'path';
+import simpleGit from 'simple-git';
+
+async function getRepoPath() {
+    const git = simpleGit();
+    const repoPath = await git.revparse(['--show-toplevel']);
+    return repoPath.trim(); // Đảm bảo loại bỏ khoảng trắng thừa
+}
+
+
 // Lấy đường dẫn đến repository hiện tại từ biến môi trường GITHUB_WORKSPACE
-const __dirname = process.env.GITHUB_WORKSPACE;
+const __dirname = await getRepoPath();;
 if (!__dirname) {
     throw new Error('GITHUB_WORKSPACE environment variable is not set');
 }
