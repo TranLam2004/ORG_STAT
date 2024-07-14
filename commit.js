@@ -14,7 +14,7 @@ export async function autoCommitPush() {
         await git.addConfig('user.name', 'github-actions[bot]');
         await git.addConfig('user.email', 'github-actions[bot]@users.noreply.github.com');
         // Thêm tất cả các thay đổi
-        await git.add('./*');
+        await git.add('img');
 
         // Lấy trạng thái của repo để biết những thay đổi nào đã được staged
         const statusSummary = await git.status();
