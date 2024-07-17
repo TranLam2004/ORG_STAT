@@ -22,7 +22,7 @@ if (!__dirname) {
 console.log(`Current repository path: ${__dirname}`);
 
 // Sử dụng repoPath để xây dựng các đường dẫn tới các file hoặc thư mục trong repository
-const dataFilePath = path.join(__dirname, '../data.json');
+const dataFilePath = path.join(__dirname, './data.json');
 
 export function generateCharts() {
   fs.readFile(dataFilePath, "utf8", (err, jsonString) => {
@@ -114,14 +114,14 @@ function createChart(data) {
     .style('fill', 'black')
     .text('Total Information');
   // Tạo thư mục 'img' nếu chưa tồn tại
-  const imgDir = path.join(__dirname, '../img');
+  const imgDir = path.join(__dirname, './img');
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
   }
 
   const svgString = body.select('#container').html();
-  fs.writeFileSync(path.join(__dirname, "../img", "Information.svg"), svgString);
+  fs.writeFileSync(path.join(__dirname, "./img", "Information.svg"), svgString);
   console.log("The SVG file was created.");
 }
 
@@ -206,14 +206,14 @@ function createTotalCommitChart(data) {
     .style('fill', 'black')
     .text('Total Commits By Members');
   // Tạo thư mục 'img' nếu chưa tồn tại
-  const imgDir = path.join(__dirname, '../img');
+  const imgDir = path.join(__dirname, './img');
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
   }
   // Lưu biểu đồ thành file SVG
   const svgString = body.select('#container').html();
-  fs.writeFileSync(path.join(__dirname, '../img', 'TotalMembersCommit.svg'), svgString);
+  fs.writeFileSync(path.join(__dirname, './img', 'TotalMembersCommit.svg'), svgString);
   console.log('The SVG file was created.');
 }
 
@@ -297,13 +297,13 @@ function createTotalCommitBy6MonthChart(data) {
     .text('Total Commits By Members (Last 6 Months)');
 
   // Tạo thư mục 'img' nếu chưa tồn tại
-  const imgDir = path.join(__dirname, '../img');
+  const imgDir = path.join(__dirname, './img');
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
   }
   const svgString = body.select('#container').html();
-  fs.writeFileSync(path.join(__dirname, '../img', 'TotalMembersCommitBy6Month.svg'), svgString);
+  fs.writeFileSync(path.join(__dirname, './img', 'TotalMembersCommitBy6Month.svg'), svgString);
   console.log('The SVG file was created.');
 }
 
@@ -417,13 +417,13 @@ function createContributionsBy6MonthChart(data) {
     .text('Total Contributions By ORG (per month for the past 6 months)');
 
   // Tạo thư mục 'img' nếu chưa tồn tại
-  const imgDir = path.join(__dirname, '../img');
+  const imgDir = path.join(__dirname, './img');
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
   }
   const svgString = body.select('#container').html();
-  fs.writeFileSync(path.join(__dirname, '../img', 'TotalContributionsBy6Month.svg'), svgString);
+  fs.writeFileSync(path.join(__dirname, './img', 'TotalContributionsBy6Month.svg'), svgString);
   console.log('The SVG file was created.');
 }
 
@@ -544,14 +544,14 @@ function createMembersBy6MonthChart(data) {
 
 
   // Tạo thư mục 'img' nếu chưa tồn tại
-  const imgDir = path.join(__dirname, '../img');
+  const imgDir = path.join(__dirname, './img');
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
   }
   // Lưu biểu đồ thành file SVG
   const svgString = body.select('#container').html();
-  fs.writeFileSync(path.join(__dirname, '../img', 'MemberCommitBy6Month.svg'), svgString);
+  fs.writeFileSync(path.join(__dirname, './img', 'MemberCommitBy6Month.svg'), svgString);
   console.log('The SVG file was created.');
 
 }
@@ -622,14 +622,14 @@ function createLanguagesChart(data) {
     .text('Total Languages');
 
   // Tạo thư mục 'img' nếu chưa tồn tại
-  const imgDir = path.join(__dirname, '../img');
+  const imgDir = path.join(__dirname, './img');
   if (!fs.existsSync(imgDir)) {
     fs.mkdirSync(imgDir);
     console.log('Created directory: img');
   }
 
   const svgString = body.select('#container').html();
-  const filePath = path.join(__dirname,"../img", 'TotalLanguages.svg');
+  const filePath = path.join(__dirname,"./img", 'TotalLanguages.svg');
   fs.writeFileSync(filePath, svgString);
   console.log(`The SVG file was created.`);
   console.log(`${filePath}`);
