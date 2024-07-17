@@ -88,7 +88,7 @@ const getRepoMergedPullRequests = async (orgname, repo) => {
   let mergedPRs = 0;
   let page = 1;
   const perPage = 100;
-  let url = `https://api.github.com/repos/${orgname}/${repo}/pulls?state=closed&per_page=${perPage}&page=${page}`;
+  let url = `https://api.github.com/repos/${orgname}/${repo}/pulls?state=all&per_page=${perPage}&page=${page}`;
 
   while (true) {
     const pulls = await fetchJSON(url);
@@ -101,7 +101,7 @@ const getRepoMergedPullRequests = async (orgname, repo) => {
       }
     });
     page++;
-    url = `https://api.github.com/repos/${orgname}/${repo}/pulls?state=closed&per_page=${perPage}&page=${page}`;
+    url = `https://api.github.com/repos/${orgname}/${repo}/pulls?state=all&per_page=${perPage}&page=${page}`;
   }
 
   return mergedPRs;
