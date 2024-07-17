@@ -331,7 +331,7 @@ const UpdateData = async (data) => {
 
 // Hàm lưu biến data
 const saveDataToFile = (data) => {
-  fs.writeFileSync("./data.json", JSON.stringify(data, null, 2), "utf-8");
+  fs.writeFileSync("data.json", JSON.stringify(data, null, 2), "utf-8");
 };
 
 // Khởi tạo data
